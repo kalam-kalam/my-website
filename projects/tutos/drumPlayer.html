@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+
+
+<section class="extended-project container">
+
+    <div class="inner portfolio">
+
+       <div class="col-xs-6">
+
+
+           <div class="demo_drumPlayer">
+
+               <div class="keys">
+                   <div data-key="65" class="key">
+                       <kbd>A<kbd>
+                           <span class="sound">TINK</span>
+                   </div>
+                   <div data-key="83" class="key">
+                       <kbd>S<kbd>
+                           <span class="sound">HIHAT</span>
+                   </div>
+                   <div data-key="68" class="key">
+                       <kbd>D<kbd>
+                           <span class="sound">KICK</span>
+                   </div>
+                   <div data-key="70" class="key">
+                       <kbd>F<kbd>
+                           <span class="sound">OPENHAT</span>
+                   </div>
+                   <div data-key="71" class="key">
+                       <kbd>G<kbd>
+                           <span class="sound">BOOM</span>
+                   </div>
+                   <div data-key="72" class="key">
+                       <kbd>H<kbd>
+                           <span class="sound">RIDE</span>
+                   </div>
+                   <div data-key="74" class="key">
+                       <kbd>J<kbd>
+                           <span class="sound">SNARE</span>
+                   </div>
+                   <div data-key="75" class="key">
+                       <kbd>K<kbd>
+                           <span class="sound">TOM</span>
+                   </div>
+
+               </div>
+
+               <div class="instructions">
+                   <p> Utiliser le clavier pour produire un son! </p>
+               </div>
+
+               <audio data-key="65" src="/assets/sounds/glass_ping-Go445-1207030150.wav"></audio>
+               <audio data-key="83" src="/assets/sounds/hihat.wav"></audio>
+               <audio data-key="68" src="/assets/sounds/kick-bass-drum.wav"></audio>
+               <audio data-key="70" src="/assets/sounds/openhat.wav"></audio>
+               <audio data-key="72" src="/assets/sounds/ride-cymbal.wav"></audio>
+               <audio data-key="74" src="/assets/sounds/snare.wav"></audio>
+               <audio data-key="75" src="/assets/sounds/tom.wav"></audio>
+               <audio data-key="71" src="/assets/sounds/boom.wav"></audio>
+
+
+
+           </div>
+
+            <!--<div class="project">
+
+                <ul class="project-slides">
+
+                    <li class="slide"><img src="/images/portfolio/cats/cats_menu.jpg" alt=""/> </li>
+                    <li class="slide"><img src="/images/portfolio/cats/asso_cats_02.jpg" alt=""/> </li>
+                    <li class="slide"><img src="/images/portfolio/cats/parrainer_cats_02.jpg" alt=""/> </li>
+                    <li class="slide"><img src="/images/portfolio/cats/soutenir_cats_02.jpg" alt=""/> </li>
+                    <li class="slide"><img src="/images/portfolio/cats/footer_cats.jpg" alt=""/> </li>
+
+                    <li class="clear"></li>
+                </ul>
+            </div>-->
+        </div>
+
+        <div class="col-xs-6">
+
+            <!-- Header -->
+            <h1 class="project-header bold dark condensed no-padding uppercase">DrumPlayer Javascript Tuto</h1>
+
+            <!-- Description -->
+            <p class=" project-desc light">
+                Dans ce mini tuto, j'explique comment mettre à contribution les touches du clavier avec Javascript.
+                Chaque touche possède un keycode, qu'il est facile d'utiliser pour l'associer à un évènnement ou élément.
+                Lorsqu'elle est enfoncée, la touche produit un son associé à son keycode et ajoute une classe css à son élément afin d'en modifier l'apparence.
+                Pour mieux comprendre, suivez les instructions ci-dessous.
+            </p>
+
+            <!-- Header -->
+            <h1 class="project-header bold dark condensed uppercase">Détails</h1>
+
+            <!-- Description -->
+            <p class=" project-detail light"><span class="bold condensed uppercase">Tuto : </span>DrumKit Javascript de Wesbos ("Javascript 30" challenge)</p>
+
+            <p class=" project-detail light"><span class="bold condensed uppercase">Caractéristiques: </span>Javascript / CSS</p>
+
+            <p class=" project-detail light"><span class="bold condensed uppercase">Date : </span>le 5/01/2016</p>
+
+        </div>
+    </div><!-- End Inner Portfolio -->
+
+    <div class="tuto_steps">
+
+        <div class="col-xs-12">
+            <h2>1. HTML</h2>
+
+        <p>Chaque touche possède un attribu data-key correspondant au keycode de la touche en question. (ici A = "65").
+            <a href="https://connaissances.fournier38.fr/Touches%20clavier%20pour%20(event.keyCode)">Trouver le keycode correspondant à chaque touche.</a></p>
+
+        <h3>Fichiers Audio</h3>
+        <p>Le fichier audio correspondant à la touche de clavier doit porter le même attribu data-key.</p>
+
+            <div class="col-xs-12">
+            <h2>2. CSS</h2>
+
+            <div class="col-xs-4">
+                <p>La class key correspond à chacune des touches du clavier.
+                La class "playing" est ajoutée à une touche seulement lorsque celle-ci est enfoncée, grâce à Javascript et dans le but de créer un effet css à ce moment précis.
+                En effet, la touche enfoncée s'agrandit momentanément.
+                C'est la propriété css "transform: scale" qui permet d'effectuer cette animation.</p>
+            </div>
+            <div class="col-xs-4">
+                <img src="/images/portfolio/tutos/soundplayer/css_key.png" alt="">
+            </div>
+            <div class="col-xs-4">
+                <img src="/images/portfolio/tutos/soundplayer/css_playing.png" alt="">
+            </div>
+            </div>
+
+
+            <div class="col-xs-12">
+                <h2>3. JAVASCRIPT</h2>
+                <div class="col-xs-12">
+                    <img src="/images/portfolio/tutos/soundplayer/javascript.png" alt="">
+
+                </div>
+
+
+                </div>
+
+
+        </div>
+
+    </div><!-- End Tuto Steps -->
+
+        <div class="clear"></div>
+
+
+</section><!-- End Project -->
+
+<script>
+    function playSound(e){
+        const audio= document.querySelector(`audio[data-key="${e.keyCode}"]`);
+        const key = document.querySelector(`.key[data-key="${e.keyCode}"]`); //will select element with class "key" and with key equals to ...
+        if(!audio) return;// stop the function from running all together
+        audio.currentTime = 0; //rewind the start (see why below)
+        audio.play(); /* but if hit the key multiple times, it will still only play once. Cause the sound plays for too long it doesn't have the time to follow the order. And if we call audio.play on an audio element that is already playing, it won't play again cause it's already playing. Hence the rewind on top of this instruction (currenTime =0).*/
+        key.classList.add('playing'); // adds the class 'playing' the the 'key' elements
+    };
+
+    function removeTransition(e) {
+        if(e.propertyName !== 'transform') return; /* skip the property if it's not a transform. Otherwise, it will remove it for every css property.
+         /*conole.log(e.propertyName);*/
+        this.classList.remove('playing');
+
+    };
+
+    const keys = document.querySelectorAll('.key');
+    keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+    window.addEventListener('keydown', playSound);
+
+</script>
+
+
+</body>
+</html>

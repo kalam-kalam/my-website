@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="193px" viewBox="0 0 50 193" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>mouse</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,136.683373 C0,124.155692 10.1475903,114 22.6843316,114 L22.1588364,114 C34.6870468,114 44.9566405,124.16376 45.0964306,136.684807 L45.3617422,160.44884 C45.5016152,172.977313 35.8393014,185.857393 23.7569901,189.223815 L22.6816253,189.523438 L21.9526561,189.333267 C9.82853892,186.170375 0,173.447738 0,160.922971 L0,136.683373 Z" id="path-1"></path>
+        <filter x="-7.7%" y="-3.3%" width="115.4%" height="109.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.690196078   0 0 0 0 0.690196078   0 0 0 0 0.690196078  0 0 0 0.724439538 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mouse" transform="translate(2.000000, 0.000000)">
+            <path d="M24,0.847167969 L24,4.78222656 C24,4.78222656 20.8242188,12.2714844 22.1728516,30.4726562 C22.5929844,36.1427765 25.5539421,48.927522 26,64.8085938 C26.0116844,65.2245953 26.0227567,65.6463808 26.0332408,66.0733617 C26.4229952,81.9465935 26,105 26,105 L24,108.861084 C24,108.861084 23.305042,90.0736192 22.1728516,66.9287109 C21.0406611,43.7838027 19.8547577,36.3629927 19.4619141,30.4726562 C17.8071289,5.66064453 24,0.847167969 24,0.847167969 Z" id="Rectangle-2" fill="#FFFFFF"></path>
+            <g id="souris">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <path stroke="#FFFFFF" stroke-width="3" d="M22.4214479,115.501596 C34.0058056,115.642422 43.466858,125.087325 43.5965241,136.701552 L43.8618356,160.465586 C43.9941642,172.31829 34.7783965,184.595851 23.3543892,187.778854 L22.6687741,187.969883 L22.3312978,187.881843 C10.8686261,184.891507 1.5,172.766127 1.5,160.922971 L1.5,136.683373 C1.5,125.068831 10.8374418,115.642284 22.4214479,115.501596 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

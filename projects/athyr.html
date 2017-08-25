@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <title>Stephanie Ledig Projet Athyr</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!--Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+
+</head>
+<body>
+<section class="extended-project container">
+
+    <div class="inner portfolio">
+        <!-- Flex Slider -->
+        <div class="project">
+
+            <ul class="project-slides">
+                <!-- Slides -->
+                <li class="slide"><img src="/images/portfolio/athyr/home_athyr.jpg" alt=""/></li>
+                <li class="slide"><img src="/images/portfolio/athyr/engagements_athyr.jpg" alt=""/></li>
+                <li class="slide"><img src="/images/portfolio/athyr/formations_home.jpg" alt=""/></li>
+                <li class="slide"><img src="/images/portfolio/athyr/articles_home.jpg" alt=""/></li>
+                <!-- End Slides -->
+
+                <!-- Clear -->
+                <li class="clear"></li>
+            </ul>
+        </div>
+
+        <!-- Header -->
+        <h1 class="project-header bold dark condensed uppercase">Description du projet</h1>
+
+        <!-- Description -->
+        <p class="project-desc light">
+            <span class="bold condensed uppercase">Création de l'identité visuelle : </span></br>
+            Athyr Formations est une école spécialisée dans la Musique Assistée par Ordinateur (M.A.O).
+            En équipe avec deux graphiste: Manuel ... et Emmanuelle, nous avons travaillé sur l'identité visuelle du
+            centre de formations.
+            À travers ce premier site vitrine, Athyr souhaitait bien sûr mettre en valeur le sérieux de ses prestations,
+            mais en conservant de légères notes d'humour et de convivialité liées à l'univers de la musique. Ce parti
+            pris assez amibigü a nécessité un travail de subtilité de notre part, de la conception des pictogrammes au
+            design du logo et en passant par la crétion du contenu.
+            Le caroussel (slider) de la page d'accueil, sous le menu, acueillera une video... </p>
+
+        <p class="project-desc light">
+            <span class="bold condensed uppercase">Côté client : </span></br>
+            La vitrine du site, côté client a été développée à partir de zéro, sans CMS ni thème.
+            J'ai utilisé CSS, Javascript et Jquery pour les animations du menu ainsi que pour les contenus déroulants
+            des pages de présentation des formations.
+            En ce qui concerne la partie responsive, j'ai souhaité utiliser les Flexbox de CSS afin de gérer au mieux le
+            comportement des éléments selon la taille de l'écran.
+        </p>
+
+        <div class="project-desc light">
+            <p>
+                <span class="bold condensed uppercase">Côté serveur: </span></br>
+                Il fallait créer un admin adapté aux besoins organisationnel d'Athyr, responsive, sécurisé et simple
+                d'utilisation.
+                Comme Athyr prévoit des fonctionnalités diverses et plutôt lourdes, telles qu'un espace de cours en
+                ligne avec inscription et paiement, j'ai pris le parti de e pas utiliser de CMS comme Wordpress.
+                En effet, même si ce CMS propose des fonctionnalités puissantes et variées, son environnement peut
+                s'avérer restrictif sur le long terme.
+                C'est la raison pour laquelle j'ai choisi Laravel, framework PHP, basé sur modèle MVC
+                (Model-View-Controller) afin de concevoir moi-même les fonctionnalités de l'admin tout en profitant des
+                façades élégantes du framework.
+                De plus, laravel offre des solutions rapides et fiables en ce qui concerne la sécurité des accès et des
+                formulaires.</p>
+
+            <h5>Gestion des formations et articles:</h5>
+            <p>L'administrateur peut créer, modifier, supprimer des formations et articles. Il peut choisir de les
+                publier dans une catégorie ou une autre.
+                Les photos et vidéo sont calibrées dès leur arrivée dans l'admin afin de les rendre homogènes en
+                proportions à lors de l'affichage côté client.</p>
+
+            <h5>Inscription, Pré-inscription & Newsletter</h5>
+            <p>Les formations peuvent avoir plusieurs sessions (1 session comprend le lieu, la date de début et la date
+                de fin d'une formation). Il faut donc qu'elles aient un lien dans la base de donnée, c'est à dire, que
+                lors du choix d'une formation par un visiteur, la session correspondante soit enregistrée au même
+                endroit.
+                Toutes ces relations de données sont codées librement grâce à Laravel, là ou Wordpress limiterait les
+                possibilités.
+                Ainsi, lorsqu'un visiteur remplit le formulaire de pré-insription, il peut choisir la formation qui
+                l'intéresse. En fonction de ce choix, les sessions correspondantes (ex: Paris le 2 janvier, Marseille le
+                3 août ...) s'affichent à leur tour pour que le visiteur puisse choisir la ville ainsi que la date qui
+                lui convient.</p>
+
+            <p>Afin de ne pas décourager l'utilisateur, les formulaires sont simples et le plus courts possible.</p>
+
+            <p>Enfin, lors d'une inscription, les informations saisies par le visiteur se retrouvent automatiquement
+                côté admin (tableau de bord du site) dans le tableau des prospects.
+                Un mail est envoyé à l'administrateur, sur son adresse gmail, à chaque nouvelle inscription.
+                Par la suite, l'administrateur peut changer le statut de ses membres en les faisant passer de prospect à
+                inscrit ou ancien élève par exmple.</p>
+
+        </div>
+        <!-- Header -->
+        <h1 class="project-header bold dark condensed uppercase">Détails</h1>
+
+        <!-- Description -->
+        <p class=" project-detail light"><span class="bold condensed uppercase">Client : </span>Athyr Formations</p>
+
+        <p class=" project-detail light"><span class="bold condensed uppercase">Caractéristiques : </span>Laravel / PHP
+            / Vitrine from scratch / Responsive </p>
+
+        <p class=" project-detail light"><span class="bold condensed uppercase">Date : </span>du 1er SEPT au 2 DEC 2016
+        </p>
+
+    </div><!-- End Inner Portfolio -->
+
+</section><!-- End Project -->
+
+
+</body>
+</html>
